@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+ 
+{% block title %}{% endblock %}
+ 
+{% block content %}
+<h1>Tienda de Productos - Tiendita</h1>
+ 
+  <p>Bienvenido a la <em><strong>Tiendita</strong></em>, la mejor tienda de productos del país.</p>
+ 
+<h2>Contenido Dinámico</h2>
+ 
+  <p>El modelo posee los siguiente datos:</p>
+  <ul>
+    <li><strong>Clientes:</strong> {{ cant_clientes }}</li>
+    <li><strong>Productos:</strong> {{ cant_productos }}</li>
+    <li><strong>Todas las Categorías:</strong> {{ total_categorias }}</li>
+    <h2>Productos en categorías "Pinturas"</h2> 
+    <li><strong>Pinturas:</strong> {{ cant_categorias_pintura }}</li>
+  </ul>
+ 
+{% endblock %}

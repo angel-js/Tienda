@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+ 
+{% block content %}
+    <h1>Lista de categoria</h1>
+ 
+    {% if categoria_list %}
+    <ul>
+ 
+      {% for categoria in categoria_list %}
+      <li>
+        <a href="{{ categoria.id }}">{{ categoria.categoria }} </a> ({{categoria.id}}) >
+      </li>
+      {% endfor %}
+ 
+    </ul>
+    {% else %}
+      <p>¡No hay categorias registrados!</p>
+    {% endif %}
+{% endblock %}
