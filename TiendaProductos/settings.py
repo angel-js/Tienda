@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Agrega la nueva aplicacion
-    'tiendita.apps.TienditaConfig' #Este objeto fue creado en /tiendita/apps.py
+    'tiendita.apps.TienditaConfig', #Este objeto fue creado en /tiendita/apps.py
+    'autenticacion',
 ]
 
 MIDDLEWARE = [

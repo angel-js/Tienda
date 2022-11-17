@@ -25,5 +25,7 @@ urlpatterns = [
     path('tiendita/', include('tiendita.urls')),
     # Se agrega mapeo de URL para redireccionar a la URL base de la aplicacion
     path('', RedirectView.as_view(url='/tiendita/', permanent=True)),
+    # Url para autentiacacion
+    path('autenticacion/', include('autenticacion.urls'))
 
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
